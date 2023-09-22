@@ -11,7 +11,7 @@ const openai = new OpenAIApi(config)
 export const runtime = 'edge'
  
 export async function POST(req: Request) {
-  // Extract `messages` from the body
+  // Extract `messages` 
   const { messages } = await req.json()
  
   // streaming chat completion 
